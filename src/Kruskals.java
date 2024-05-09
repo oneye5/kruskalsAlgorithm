@@ -56,13 +56,6 @@ public class Kruskals {
                 mst.get(toGroupIndex).add(current);
         }
 
-        // Combine sets into a single set
-        Set<Edge> result = new HashSet<>();
-        for (Set<Edge> set : mst) {
-            result.addAll(set);
-        }
-
-        System.out.println(mst);
-        return result;
+        return mst.getFirst();
     }
 }
